@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+}
+
+/* o menu ai, ta escritokkkkkkkkk */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+  gap: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #0a0a0a;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #f2a93b;
+}
+
+.icone-logo {
+  color: #d62828;
+  font-size: 22px;
+}
+
+.logo .destaque {
+  color: #d62828;
+}
+
+.menu-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.botao-menu {
+  background-color: #1a1a1a;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.botao-menu:hover {
+  background-color: #2a2a2a;
+}
+
+.botao-menu-login {
+  color: #d62828;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* o welcome */
+.boas-vindas {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.boas-vindas h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+/* caaategoooriaaaaaaaaaaasssss */
+.categoria {
+  padding: 20px 40px;
+}
+
+.titulo-categoria {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.lista-filmes {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.card-filme {
+  flex-shrink: 0;
+  width: 160px;
+}
+
+.capa-filme {
+  width: 160px;
+  height: 230px;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.nome-filme {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.nota-filme {
+  font-size: 13px;
+  color: #cccccc;
+}
+
+/* barra de rolagem, isso ai fiz com ia, nem procurei entender nao :( admito fodase */
+.lista-filmes::-webkit-scrollbar {
+  height: 8px;
+}
+
+.lista-filmes::-webkit-scrollbar-thumb {
+  background-color: #333333;
+  border-radius: 10px;
+}
+
+/* pra arruma coisa de celular que nao vo explica mais */
+@media (max-width: 600px) {
+  .menu {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .boas-vindas h1 {
+    font-size: 30px;
+  }
+
+  .card-filme {
+    width: 120px;
+  }
+
+  .capa-filme {
+    width: 120px;
+    height: 170px;
+  }
+}

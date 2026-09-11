@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.fundo-registro {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #000;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),
+    url('https://cdn.telaviva.com.br/wp-content/uploads/2021/08/netflix-.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.caixa-registro {
+  background-color: #141414;
+  border-radius: 12px;
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.caixa-registro h2 {
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+.campo label {
+  display: block;
+  color: #cccccc;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.campo input,
+.campo select {
+  width: 100%;
+  background-color: #222222;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.campo input:focus,
+.campo select:focus {
+  outline: none;
+  border-color: #f2a93b;
+}
+
+.campo select {
+  cursor: pointer;
+}
+
+.campo input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.botao-registrar {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f2a93b;
+  color: #1a1a1a;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.botao-registrar:hover {
+  background-color: #d9932a;
+}
+
+.texto-cadastro {
+  text-align: center;
+  margin-top: 20px;
+  color: #999999;
+  font-size: 13px;
+}
+
+.texto-cadastro a {
+  color: #f2a93b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* pra celular tava bugando denovo, entao pedi
+   pro gpt fazer esse negocio denovokkkkk
+   espero que isso dai esteja dando certo */
+   
+@media (max-width: 500px) {
+  .caixa-registro {
+    padding: 25px;
+  }
+}

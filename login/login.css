@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.fundo-login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #000;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),
+    url('https://png.pngtree.com/thumb_back/fh260/background/20230630/pngtree-d-rendering-of-cinema-seating-and-screen-with-copy-space-perfect-image_3699237.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.caixa-login {
+  background-color: #141414;
+  border-radius: 12px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imglogo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.caixa-login h2 {
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.subtitulo {
+  color: #999999;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.botao-google,
+.botao-apple {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.botao-google:hover,
+.botao-apple:hover {
+  background-color: #eeeeee;
+}
+
+.botao-google img,
+.botao-apple img {
+  width: 20px;
+  height: 20px;
+}
+
+.linha-divisoria {
+  text-align: center;
+  color: #999999;
+  font-size: 13px;
+  margin: 20px 0;
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+.campo label {
+  display: block;
+  color: #cccccc;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.campo input {
+  width: 100%;
+  background-color: #222222;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.campo input:focus {
+  outline: none;
+  border-color: #f2a93b;
+}
+
+.esqueceu-senha {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.esqueceu-senha a {
+  color: #999999;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.aviso {
+  color: #FF746C;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.botao-entrar {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background-color: #d62828;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botao-entrar:hover {
+  background-color: #b31f1f;
+}
+
+.texto-cadastro {
+  text-align: center;
+  margin-top: 20px;
+  color: #999999;
+  font-size: 13px;
+}
+
+.texto-cadastro a {
+  color: #f2a93b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* TELA PEQUENA (CELULAR) */
+@media (max-width: 500px) {
+  .caixa-login {
+    padding: 25px;
+  }
+} 

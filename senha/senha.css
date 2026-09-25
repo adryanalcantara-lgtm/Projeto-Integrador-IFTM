@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.fundo-recuperar {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #000;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.9)),
+    url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1600');
+  background-size: cover;
+  background-position: center;
+}
+
+.caixa-recuperar {
+  background-color: #141414;
+  border-radius: 12px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.caixa-recuperar h2 {
+  color: white;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.caixa-recuperar .subtitulo {
+  color: #999999;
+  font-size: 14px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.campo {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.campo label {
+  display: block;
+  color: #cccccc;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.campo input {
+  width: 100%;
+  background-color: #222222;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.campo input:focus {
+  outline: none;
+  border-color: #f2a93b;
+}
+
+.botao-continuar {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background-color: #d62828;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.botao-continuar:hover {
+  background-color: #b31f1f;
+}
+
+.reenviar-codigo {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #999999;
+}
+
+.reenviar-codigo a {
+  color: #f2a93b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.voltar-login {
+  text-align: center;
+  margin-top: 20px;
+  color: #999999;
+  font-size: 13px;
+}
+
+.voltar-login a {
+  color: #f2a93b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* o baguio pra celular denovo, vo aprende como que faz isso pra eu nao ter que ficar 
+  indo na ia toda vez */
+@media (max-width: 600px) {
+  .caixa-recuperar {
+    padding: 25px;
+  }
+}

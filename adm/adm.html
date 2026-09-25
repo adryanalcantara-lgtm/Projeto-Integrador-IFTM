@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CinePoca - Painel do Administrador</title>
+<link rel="stylesheet" href="adm.css">
+</head>
+<body>
+
+  <!-- encima -->
+  <header class="menu">
+      <div class="logo">
+        <img class="imglogo" src="/assets/cinepoca1.png" alt="cinepocalogo">
+      </div>
+      <span class="selo-perfil">Admin</span>
+    </div>
+
+    <nav class="menu-links">
+      <a href="#topo" class="botao-menu">Home</a>
+      <a class="botao-menu">Pesquisar</a>
+      <a href="/login/login.html" class="botao-menu-login">Sair</a>
+    </nav>
+  </header>
+
+  <!-- welcome -->
+  <section id="topo" class="boas-vindas">
+    <h1>Painel do Administrador</h1>
+  </section>
+
+  <!-- o painel do admin -->
+  <section class="painel-admin">
+    <h2>Visão Geral</h2>
+
+    <div class="cards-estatistica">
+      <div class="card-estatistica">
+        <p class="numero">67</p>
+        <p class="legenda">Usuários cadastrados</p>
+      </div>
+
+      <div class="card-estatistica">
+        <p class="numero">27</p>
+        <p class="legenda">Filmes no catálogo</p>
+      </div>
+
+      <div class="card-estatistica">
+        <p class="numero">42</p>
+        <p class="legenda">Produtores ativos</p>
+      </div>
+
+      <div class="card-estatistica">
+        <p class="numero">0</p>
+        <p class="legenda">Denúncias pendentes</p>
+      </div>
+    </div>
+
+    <div class="botoes-admin">
+      <a href="" class="botao-admin">Gerenciar Usuários</a>
+      <a href="" class="botao-admin">Gerenciar Filmes</a>
+      <a href="" class="botao-admin">Gerenciar Produtores</a>
+      <a href="" class="botao-admin">Ver Denúncias</a>
+    </div>
+  </section>
+
+  <!-- java script das categoria lá -->
+  <div id="categorias"></div>
+
+  <script src="/home/home.js"></script>
+
+</body>
+</html>

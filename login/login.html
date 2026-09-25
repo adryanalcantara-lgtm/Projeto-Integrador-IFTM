@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CinePoca - Login</title>
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <div class="fundo-login">
+    <div class="caixa-login">
+
+      <div class="logo">
+        <img src="/assets/cinepoca1.png" alt="cinepocalogo" class="imglogo">
+      </div>
+
+      <h2>Fazer login</h2>
+      <p class="subtitulo">Entre com sua conta para continuar</p>
+
+      <button class="botao-google" type="button">
+        <img src="https://www.google.com/favicon.ico" alt="Google">
+        Fazer Login com Google
+      </button>
+
+      <button class="botao-apple" type="button">
+        <img src="https://www.apple.com/favicon.ico" alt="Apple">
+        Fazer Login com Apple
+      </button>
+
+      <p class="linha-divisoria">ou</p>
+
+      <form>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        </div>
+
+        <div class="campo">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+        </div>
+
+        <div class="esqueceu-senha">
+          <a href="/senha/esq-email.html">Esqueceu a senha?</a>
+        </div>
+
+        <div class="aviso">
+          
+        </div>
+
+        <a class="botao-entrar" onclick="loginUsuario()">Entrar</a>
+      </form>
+
+      <p class="texto-cadastro">Não tem uma conta? <a href="/registro/registro.html">Registre-se</a></p>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CinePoca - Registro</title>
+<link rel="stylesheet" href="/registro/registro.css">
+</head>
+<body>
+
+  <div class="fundo-registro">
+    <div class="caixa-registro">
+      <h2>Criar conta</h2>
+
+      <form>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        </div>
+
+        <div class="campo">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+        </div>
+
+        <div class="campo">
+          <label for="confirmar-senha">Confirme sua senha</label>
+          <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Digite a senha novamente" required>
+        </div>
+
+        <div class="campo">
+          <label for="nascimento">Data de nascimento</label>
+          <input type="date" id="nascimento" name="nascimento" placeholder="DD/MM/AAAA" required>
+        </div>
+
+        <div class="campo">
+            <label for="genero">Gênero</label>
+            <select id="genero" name="genero" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="outro">Outro</option>
+                    <option value="prefiro-nao-dizer">Prefiro não dizer</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="genero-filme">Gênero de filme favorito</label>
+            <select id="genero-filme" name="genero-filme" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="acao">Ação</option>
+                <option value="comedia">Comédia</option>
+                <option value="terror">Terror</option>
+                <option value="drama">Drama</option>
+                <option value="romance">Romance</option>
+                <option value="ficcao-cientifica">Ficção Científica</option>
+                <option value="animacao">Animação</option>
+                <option value="documentario">Documentário</option>
+                <option value="suspense">Suspense</option>
+            </select>
+        </div>
+
+        <button type="submit" class="botao-registrar" href="/login/login.html">Registrar</button>
+      </form>
+
+      <p class="texto-cadastro">Já tem uma conta? <a href="/login/login.html">Faça Login</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
